@@ -39,7 +39,7 @@ const registerUser = asyncHandler( async (req,res) => {
         username:username.toLowerCase(),
     })
 
-    console.log("User",user);
+    //console.log("User",user);
     
 
     const createdUser = await User.findOne(user._id).select(
